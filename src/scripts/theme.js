@@ -1,9 +1,11 @@
 
 /* Desenvolva sua lógica aqui ... */
 const darkModeButton = document.querySelector('.darkModeButton')
+const html = document.querySelector('html')
+
 //toggle dark mode
 function toggleDarkMode(){
-  document.body.classList.toggle('dark')
+  html.classList.toggle('dark')
 }
 
 // load light or dark mode
@@ -18,14 +20,14 @@ darkModeButton.addEventListener('click', function(){
 
     // save or remove dark mode when user clicks
     localStorage.removeItem('dark');
-    if(document.body.classList.contains('dark')){
+    if(html.classList.contains('dark')){
       localStorage.setItem('dark',1);
     }
 })
 
 
 
-
+// html.classList.add('dark')
 
 
 

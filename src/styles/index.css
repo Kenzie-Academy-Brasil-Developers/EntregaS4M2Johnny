@@ -1,11 +1,18 @@
 /* Desenvolva sua estilização aqui ... */
-
+header{
+}
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .headerDiv{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20%;
-  margin-top: 4.8125rem;
+  margin-top: 77px;
 }
 .headerDiv>h1{
   font-family: 'Inter';
@@ -13,6 +20,7 @@
   font-weight: 600;
   font-size: 1.75rem;
   line-height: 2.125rem;
+  color: #212529;
 }
 
 .darkMode-Moon{
@@ -270,13 +278,19 @@ span>p{
   align-items: center;
 }
 
-.dark{
+.dark header{
   background-color: black;
 }
+.dark main{
+  background-color: black;
+}
+
 .dark .darkMode-Moon{
    display: none;
 }
-
+.dark .headerDiv>h1{
+  color: white;
+}
 .dark .fakeButton{
   background-color: #212529;
   color: #868E96;
@@ -296,9 +310,6 @@ span>p{
 .dark .darkModeButton{
   /* display: none; */
   background-color: #212529;
-}
-.dark .headerDiv{
-  color: #FDFEFF;
 }
 
 .dark .filter_manager-element{
