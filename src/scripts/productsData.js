@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     title: "Magnetite",
     category: 8,
@@ -13,14 +13,14 @@ const products = [
     category: 2,
     price: 66.0,
     img: "./src/assets/img/2.jpg",
-    band: "Novos Baianos",
+    band: "Velhos Paulistas",
     year: 1972,
     id: 1,
   },
   {
     title: "Nirvana Discografia",
     category: 8,
-    price: 50.0,
+    price: 30.0,
     img: "./src/assets/img/3.jpg",
     band: "Nirvava",
     year: 1990,
@@ -37,17 +37,17 @@ const products = [
   },
 ];
 
-const categories = [
+export const categories = [
   "Todos",
   "Pop",
   "MPB",
-  "Forró",
+  "Indie",
   "Samba",
-  "Baião",
+  "Folk",
   "Rap",
   "Hip-Hop",
   "Rock",
   "Reggae",
   "Country",
-  "Gospel",
+  "Death Metal",
 ];

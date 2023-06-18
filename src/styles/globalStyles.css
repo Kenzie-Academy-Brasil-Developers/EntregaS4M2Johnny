@@ -6,6 +6,19 @@
   box-sizing: border-box;
 }
 
+.dark:root{
+    --grey-1: #212529
+    --grey-2: #2B2F33
+    --grey-3: #868E96
+    --grey-4: #ADB5BD
+    --grey-5: #CED4DA
+    --grey-6: #DEE2E6
+    --grey-7: #F1F3F5
+    --grey-8: #F8F9FA
+    --grey-9: #FDFEFF
+  }
+
+
 :root {
   --color-brand-1:#9747ff;
   --color-grey-0: #15171a;
@@ -36,6 +49,8 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-grey-9);
+  transition: 0.5s;
+  overflow-y: scroll;
 }
 
 .container {

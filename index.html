@@ -8,11 +8,40 @@
     <link rel="stylesheet" href="./src/styles/index.css" />
     <title>Open Music</title>
   </head>
-  <body>
-    <header></header>
-    <main></main>
-    <script src="./src/scripts/theme.js"></script>
-    <script src="./src/scripts/productsData.js"></script>
-    <script src="./src/scripts/index.js"></script>
+  <body class="dark" >
+    <header>
+      <div class="headerDiv" >
+        <h1>open music</h1>
+        <button class="darkModeButton"> 
+          <p class="light-mode">&#9728;</p>
+          <p class="darkMode-Moon">&#127768;</p>
+          <!-- <img class="darkMode-Moon" src="src/assets/img/moon.svg" alt=""> -->
+          <!-- <img  class="light-mode" src="src/assets/img/sun.svg" alt=""> -->
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="filter_manager">
+        <div class="filter_manager-div" >
+          <h2 class="filter_manager-element">Gênero Musical</h2>
+          <ul class="filter_buttons-render"></ul>
+        </div>
+        <div class="filter_manager-second-div">
+          <div class="filter_manager-third-div">
+            <h2 class="filter_manager-third-price">Definir Preço</h2>
+                <p id="test"  class="filter_manager-third-text">Até R$<span class="inputSpan" id="idToFind"></span></p>
+                <span class="bar"><span class="fill"></span></span>
+                <input class="inputRadio" id="slider" type="range" min="0" max="90" step="1" value="0"> 
+          </div>
+        </div> 
+      </section>
+      <section class="filter_render">
+        <h2 class="filter_render-title" >Álbuns Encontrados</h2>
+        <ul class="filter_render-cards"></ul>
+      </section>
+    </main>
+    <script src="./src/scripts/theme.js" defer type="module" ></script>
+    <script src="./src/scripts/productsData.js" defer type="module" ></script>
+    <script src="./src/scripts/index.js" defer type="module" ></script>
   </body>
 </html>
