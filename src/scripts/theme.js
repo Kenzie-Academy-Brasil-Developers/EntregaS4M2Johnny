@@ -2,31 +2,38 @@
 /* Desenvolva sua lógica aqui ... */
 const darkModeButton = document.querySelector('.darkModeButton')
 const html = document.querySelector('html')
+let dark = false;
 
 //toggle dark mode
 function toggleDarkMode(){
+  dark = !dark;
   html.classList.toggle('dark')
+  localStorage.setItem("theme",JSON.stringify(dark));
 }
 
 // load light or dark mode
-function loadTheme(){
-  const darkMode = localStorage.getItem('dark')
-  if(darkMode){
-    toggleDarkMode();
-  }
-}
+// function loadTheme(){
+//   const darkMode = localStorage.getItem('dark')
+//   if(darkMode){
+//     toggleDarkMode();
+//   }
+// }
 darkModeButton.addEventListener('click', function(){
     toggleDarkMode()
 
     // save or remove dark mode when user clicks
-    localStorage.removeItem('dark');
-    if(html.classList.contains('dark')){
-      localStorage.setItem('dark',1);
-    }
+
 })
 
-
-
+function themeAnalasys(){
+  dark = JSON.parse(localStorage.getItem("theme"));
+  if(dark){
+    html.classList.add('dark');
+  } else {
+    html.classList.remove('dark')
+  }
+}
+themeAnalasys()
 // html.classList.add('dark')
 
 
